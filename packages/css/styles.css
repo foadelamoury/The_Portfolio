@@ -766,6 +766,13 @@ img {
   padding: 0 2rem;
 }
 
+.portfolio__content iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
 .portfolio__img {
   width: 400px;
   border-radius: 0.5rem;
