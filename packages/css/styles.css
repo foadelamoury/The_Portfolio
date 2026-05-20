@@ -113,7 +113,7 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -178,7 +178,7 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
@@ -215,13 +215,13 @@ img {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    bottom: -100%;
+    top: -100%;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 1.5rem 1.5rem;
     transition: 0.3s;
   }
 }
@@ -262,7 +262,7 @@ img {
 
 /* show menu */
 .show-menu {
-  bottom: 0;
+  top: var(--header-height);
 }
 
 /* Active link */
@@ -1093,7 +1093,7 @@ img {
   }
 
   .services__content {
-    padding-left: 5rem;
+    padding: 3.5rem 1.5rem 1.25rem 1.5rem;
   }
   .services__modal {
     padding: 0 0rem;
